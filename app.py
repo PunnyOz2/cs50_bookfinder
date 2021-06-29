@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 app.secret_key = 'HiTherePun'
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ['DATABASE_URL']
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ['DATABASE_2']
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
 
